@@ -10,3 +10,11 @@
     чем стили в медиазапросе предпочтений пользователя
   */
 }
+
+:root {
+  --accent-color: rgba(255, 141, 203, 1);
+  --base-text-color: rgba(53, 52, 48, 1);
+  --accent-text-color: rgba(53, 52, 48, 1);
+  --theme-top-color: rgba(255, 194, 230, 1);
+  --theme-shadow-color: rgba(255, 0, 112, 1);
+}
