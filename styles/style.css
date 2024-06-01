@@ -4,4 +4,121 @@
   /* сохраните в разметке и стилях класс page. На его основе работает скрипт. */
 }
 
+.header {
+  background-image: url(/images/cover-image-dark.png);
+  display: grid;
+  align-items: start;
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-rows: repeat(3, 1fr);
+}
+
+.header__theme-menu {
+  grid-column-start: 2;
+  grid-column-end: 4;
+}
+
+.header__theme-menu-list {
+  display: flex;
+  justify-content: center;
+  margin-top: 20px;
+}
+
+.header__theme-menu-button {
+  color: var(--accent-color);
+  font-family: 'IBM Plex Mono';
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 18px;
+  text-align: center;
+  background-color: transparent;
+  border: none;
+  text-transform: lowercase;
+  margin-right: 10px;
+}
+
+.decoration {
+  color: var(--theme-top-color);
+  font-family: 'IBM Plex Mono';
+  font-size: 157px;
+  font-weight: 700;
+  line-height: 129.53px;
+  text-align: left;
+  grid-column-start: 1;
+  grid-column-end: 4;
+  grid-row-start: 2;
+
+}
+
+.header_title {
+  background-color: var(--accent-color);
+  color: var(--accent-text-color);
+  font-family: 'IBM Plex Mono';
+  font-size: 18px;
+  font-weight: 700;
+  line-height: 23.4px;
+  text-align: left;
+  grid-column-start: 3;
+  grid-column-end: 5;
+  grid-row-start: 3;
+  margin-right: 20px;
+}
+
+.why {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(4, 1fr);
+}
+
+.section_title {
+  color: var(--accent-color);
+  font-family: 'IBM Plex Mono';
+  font-size: 18px;
+  font-weight: 700;
+  line-height: 23.4px;
+  text-align: left;
+}
+
+.content_title {
+  background-color: var(--accent-color);
+  color: var(--accent-text-color);
+  font-family: 'IBM Plex Mono';
+  font-size: 18px;
+  font-weight: 700;
+  line-height: 23.4px;
+  text-align: left;
+}
+
+.paragraph_title {
+  background-color: var(--accent-color);
+  color: var(--accent-text-color);
+  font-family: 'IBM Plex Mono';
+  font-size: 18px;
+  font-weight: 700;
+  line-height: 23.4px;
+  text-align: left;
+  grid-column-start: 2;
+  grid-column-end: 4;
+}
+
+.text_title {
+  background-color: var(--accent-color);
+  color: var(--accent-text-color);
+  font-family: 'IBM Plex Mono';
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 23.4px;
+  text-align: left;
+}
+
+.text {
+  color: var(--base-text-color);
+  font-family: 'IBM Plex Mono';
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 23.4px;
+  text-align: left;
+  grid-column-start: 2;
+  grid-column-end: 4;
+
+}
 
