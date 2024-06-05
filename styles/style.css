@@ -2,6 +2,7 @@
 @import url(variables.css);
 @import url(dark.css);
 @import url(light.css);
+@import url(../fonts/fonts.css);
 
 .page {
   /* сохраните в разметке и стилях класс page. На его основе работает скрипт. */
@@ -53,7 +54,8 @@
   grid-column-start: 1;
   grid-column-end: 4;
   grid-row-start: 2;
-
+  margin-bottom: 114px;
+  margin-left: 5px;
 }
 
 .header_title {
@@ -70,19 +72,47 @@
   margin-right: 20px;
 }
 
+.content {
+  display: grid;
+  row-gap: 80px;
+  margin-right: 20px;
+  margin-left: 20px;
+}
+
 .why {
   display: grid;
+  align-items: start;
   grid-template-columns: repeat(3, 1fr);
-  grid-template-rows: repeat(4, 1fr);
+}
+
+.section_body {
+  display: grid;
+  align-items: start;
+  grid-template-columns: repeat(3, 1fr);
+  grid-column-gap: 20px;
 }
 
 .section_title {
+  width: 315px;
+  height: 47px;
   color: var(--accent-color);
   font-family: 'IBM Plex Mono';
   font-size: 18px;
   font-weight: 700;
   line-height: 23.4px;
   text-align: left;
+  margin-bottom: 20px;
+}
+
+.how {
+  display: grid;
+  align-items: start;
+  grid-template-columns: repeat(3, 1fr);
+}
+
+.paragraph_block {
+  grid-column-start: 2;
+  grid-column-end: 4;
 }
 
 .content_title {
