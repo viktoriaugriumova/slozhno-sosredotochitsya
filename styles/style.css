@@ -1,7 +1,14 @@
 /* Основные стили проекта. Это стили для темы, которую вы верстаете первой. */
+@import url(variables.css);
+@import url(dark.css);
+@import url(light.css);
 
 .page {
   /* сохраните в разметке и стилях класс page. На его основе работает скрипт. */
+  background-image: url(/images/cover-image-dark.png);
+  background-position: center;
+  background-repeat: cover;
+  background-attachment: fixed;
 }
 
 .header {
@@ -37,7 +44,7 @@
 }
 
 .decoration {
-  color: var(--theme-top-color);
+  color: var(--title-color);
   font-family: 'IBM Plex Mono';
   font-size: 157px;
   font-weight: 700;
@@ -111,7 +118,7 @@
 }
 
 .text {
-  color: var(--base-text-color);
+  color: var(--text-color);
   font-family: 'IBM Plex Mono';
   font-size: 18px;
   font-weight: 400;

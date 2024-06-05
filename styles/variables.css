@@ -4,9 +4,8 @@
 */
 
 :root {
-  --accent-color: rgba(255, 0, 112, 1);
-  --base-text-color: rgba(241, 178, 206, 1);
-  --accent-text-color: rgba(0, 0, 40, 1);
-  --theme-top-color: rgba(219, 0, 255, 1);
-  --theme-shadow-color: rgba(255, 0, 112, 1);
+  --cover-image: url(../images/cover-image-dark.png);
+  --accent-color: #ff0070;
+  --title-color: #db00ff;
+  --text-color: #f1b2ce;
 }

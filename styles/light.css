@@ -4,17 +4,45 @@
   переключая тему
 */
 
-.page.theme_light {
+
+.page .theme_light {
   /* сохраните этот селектор в приведённом виде.
     Так стили написанные ниже будут иметь больший вес,
     чем стили в медиазапросе предпочтений пользователя
   */
+  --cover-image: url(../images/cover-image-light.png);
+  --accent-color: #ff8dcb;
+  --title-color: #ffc2e6;
+  --text-color: #353430;
 }
 
-:root {
-  --accent-color: rgba(255, 141, 203, 1);
-  --base-text-color: rgba(53, 52, 48, 1);
-  --accent-text-color: rgba(53, 52, 48, 1);
-  --theme-top-color: rgba(255, 194, 230, 1);
-  --theme-shadow-color: rgba(255, 0, 112, 1);
+.theme_light .header__decoration {
+  visibility: hidden;
+}
+
+.theme_light .header::before
+.theme_light .header::after
+.theme_light .footer::before
+.theme_light .footer::after {
+  border-color: var(--text-color);
+}
+
+@media (prefers-color-scheme: light) {
+  :root {
+    --cover-image: url(../images/cover-image-light.png);
+    --accent-color: #ff8dcb;
+    --title-color: #ffc2e6;
+    --text-color: #353430;
+  }
+
+  .header__decoration {
+    visibility: hidden;
+  }
+
+  .header::before
+  .header::after
+  .footer::before
+  .footer::after {
+    border-color: var(--text-color);
+  }
 }
