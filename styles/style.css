@@ -26,10 +26,36 @@ a:focus-visible {
 
 .header {
   background-image: var(--cover-image);
+  background-repeat: round;
   display: grid;
   align-items: start;
   grid-template-columns: repeat(4, 1fr);
   grid-template-rows: repeat(3, 1fr);
+  position: relative;
+}
+
+.header::before {
+  content: "";
+  width: 25px;
+  height: 25px;
+  border-top: 1px solid var(--accent-color);
+  border-right: 1px solid var(--accent-color);
+  margin-top: 20px;
+  margin-right: 20px;
+  position: absolute;
+  left: 979px;
+}
+
+.header::after {
+  content: "";
+  width: 25px;
+  height: 25px;
+  border-bottom: 1px solid var(--accent-color);
+  border-left: 1px solid var(--accent-color);
+  margin-bottom: 20px;
+  margin-left: 20px;
+  top: 685px;
+  position: absolute;
 }
 
 .header__theme-menu {
@@ -103,6 +129,7 @@ a:focus-visible {
 .content {
   display: grid;
   row-gap: 80px;
+  margin-top: 50px;
   margin-right: 20px;
   margin-left: 20px;
 }
