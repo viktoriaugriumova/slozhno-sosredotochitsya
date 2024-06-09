@@ -1,8 +1,8 @@
 /* Основные стили проекта. Это стили для темы, которую вы верстаете первой. */
+@import url(../fonts/fonts.css);
 @import url(variables.css);
 @import url(dark.css);
 @import url(light.css);
-@import url(../fonts/fonts.css);
 
 .page {
   /* сохраните в разметке и стилях класс page. На его основе работает скрипт. */
@@ -32,6 +32,7 @@ a:focus-visible {
   grid-template-columns: repeat(4, 1fr);
   grid-template-rows: repeat(3, 1fr);
   position: relative;
+  height: 100vh;
 }
 
 .header::before {
@@ -85,7 +86,7 @@ a:focus-visible {
 
 .header__theme-menu-button_active {
   border: 1px solid var(--accent-color);
-  pointer-events: none; 
+  pointer-events: none;
 }
 
 .header__theme-menu-button:hover {
