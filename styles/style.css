@@ -16,6 +16,14 @@ a {
   text-shadow: 4px 4px 0px var(--accent-color);
 }
 
+a:hover {
+  text-decoration: underline var(--accent-color);
+}
+
+a:focus-visible {
+  border: 1px solid var(--text-color);
+}
+
 .header {
   background-image: var(--cover-image);
   display: grid;
@@ -46,6 +54,21 @@ a {
   border: none;
   text-transform: lowercase;
   margin-right: 10px;
+  cursor: pointer;
+}
+
+.header__theme-menu-button_active {
+  border: 1px solid var(--accent-color);
+  pointer-events: none; 
+}
+
+.header__theme-menu-button:hover {
+  border: 1px solid #FF007066;
+}
+
+.header__theme-menu-button:focus-visible {
+  text-decoration: underline var(--accent-color);
+
 }
 
 .decoration {
