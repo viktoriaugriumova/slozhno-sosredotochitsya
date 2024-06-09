@@ -249,5 +249,32 @@ a {
   .section_body {
     grid-template-columns: repeat(1, 1fr);
   }
-  
+}
+
+@media (min-width: 375px) and (max-width: 668px) {
+  .decoration {
+    font-size: 116px;
+    line-height: 95.7px;
+    margin-bottom: 55px;
+    margin-left: 10px;
+  }
+
+  .header__theme-menu {
+    grid-column-start: 4;
+  }
+
+  .header__theme-menu-list {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    gap: 10px;
+  }
+
+  .header_title {
+    grid-column-start: 1;
+    grid-column-end: 5;
+    grid-row-start: 3;
+    margin-right: 10px;
+    margin-left: 10px;
+  }
 }
