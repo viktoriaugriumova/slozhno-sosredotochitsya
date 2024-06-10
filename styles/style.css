@@ -1,9 +1,9 @@
 /* Основные стили проекта. Это стили для темы, которую вы верстаете первой. */
+@import url(../fonts/fonts.css);
 @import url(globals.css);
 @import url(variables.css);
 @import url(dark.css);
 @import url(light.css);
-@import url(../fonts/fonts.css);
 
 .page {
   /* сохраните в разметке и стилях класс page. На его основе работает скрипт. */
@@ -47,7 +47,7 @@ a:focus-visible {
   text-align: center;
   width: 33px;
   height: 26px;
-  top: 12px;
+  top: 20px;
   left: 943px;
   position: absolute;
 }
@@ -58,7 +58,7 @@ a:focus-visible {
   background-color: var(--accent-color);
   width: 9px;
   height: 9px;
-  top: 20px;
+  top: 28px;
   left: 986px;
   position: absolute;
   border-radius: 6px;
@@ -70,7 +70,7 @@ a:focus-visible {
   height: 25px;
   border-top: 1px solid var(--accent-color);
   border-right: 1px solid var(--accent-color);
-  margin-top: 12px;
+  margin-top: 20px;
   margin-right: 20px;
   position: absolute;
   left: 979px;
@@ -85,7 +85,7 @@ a:focus-visible {
   margin-top: 20px;
   margin-right: 20px;
   position: absolute;
-  top: 691px;
+  top: 701px;
   left: 20px;
 }
 
@@ -97,7 +97,7 @@ a:focus-visible {
 .header__theme-menu-list {
   display: flex;
   justify-content: center;
-  margin-top: 12px;
+  margin-top: 20px;
 }
 
 .header__theme-menu-button {
@@ -139,7 +139,7 @@ a:focus-visible {
   grid-column-start: 1;
   grid-column-end: 4;
   grid-row-start: 2;
-  margin-top: 64px;
+  margin-top: 73px;
   text-shadow: 4px 4px 0px #FF0070;
 }
 
@@ -155,12 +155,12 @@ a:focus-visible {
   grid-column-end: 5;
   grid-row-start: 3;
   margin-right: 20px;
-  margin-top: 58px;
+  margin-top: 65px;
 }
 
 .content {
   display: grid;
-  row-gap: 80px;
+  row-gap: 40px;
   margin-top: 72px;
   margin-right: 20px;
   margin-left: 20px;
@@ -170,6 +170,7 @@ a:focus-visible {
   display: grid;
   align-items: start;
   grid-template-columns: repeat(3, 1fr);
+  margin-top: 10px;
 }
 
 .section_body {
@@ -254,6 +255,7 @@ a:focus-visible {
 
 .pictures {
   margin-bottom: 60px;
+  margin-top: 25px;
 }
 
 .panno {
