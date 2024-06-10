@@ -1,14 +1,15 @@
 /* Основные стили проекта. Это стили для темы, которую вы верстаете первой. */
-@import url(../fonts/fonts.css);
+@import url(globals.css);
 @import url(variables.css);
 @import url(dark.css);
 @import url(light.css);
+@import url(../fonts/fonts.css);
 
 .page {
   /* сохраните в разметке и стилях класс page. На его основе работает скрипт. */
   background-image: var(--cover-image);
   background-position: center;
-  background-repeat: cover;
+  width: 100%;
   background-attachment: fixed;
 }
 
