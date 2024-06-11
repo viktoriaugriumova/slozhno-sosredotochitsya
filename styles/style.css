@@ -8,6 +8,7 @@
 .page {
   /* сохраните в разметке и стилях класс page. На его основе работает скрипт. */
   background-image: var(--cover-image);
+  background-color: #000028;
   background-position: center;
   width: 100%;
   background-attachment: fixed;
@@ -27,7 +28,6 @@ a:focus-visible {
 
 .header {
   background-image: var(--cover-image);
-  background-repeat: no-repeat;
   background-position: bottom;
   display: grid;
   align-items: start;
