@@ -32,6 +32,7 @@ a:focus-visible {
   grid-template-columns: repeat(4, 1fr);
   grid-template-rows: repeat(3, 1fr);
   position: relative;
+  height: 100vh;
 }
 
 .rec::before {
@@ -156,9 +157,9 @@ a:focus-visible {
 }
 
 .content {
-  display: grid;
-  row-gap: 40px;
-  margin-top: 72px;
+  /* display: grid;
+  row-gap: 40px; */
+  margin-top: 80px;
   margin-right: 20px;
   margin-left: 20px;
 }
@@ -167,7 +168,25 @@ a:focus-visible {
   display: grid;
   align-items: start;
   grid-template-columns: repeat(3, 1fr);
-  margin-top: 10px;
+  column-gap: 20px;
+  margin-bottom: 80px;
+}
+
+.paragraph_block {
+  display: grid;
+  grid-column-start: 2;
+  grid-column-end: 4;
+  row-gap: 15px;
+}
+
+.what {
+  margin-bottom: 78px;
+}
+
+.text_block {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
 }
 
 .section_body {
@@ -179,8 +198,8 @@ a:focus-visible {
 }
 
 .section_title {
-  width: 315px;
-  height: 47px;
+  /* width: 315px;
+  height: 47px; */
   color: var(--accent-color);
   font-family: 'IBM Plex Mono';
   font-size: 18px;
@@ -197,11 +216,22 @@ a:focus-visible {
   display: grid;
   align-items: start;
   grid-template-columns: repeat(3, 1fr);
+  column-gap: 20px;
+  margin-bottom: 80px;
 }
 
-.paragraph_block {
+.paragraph_set {
   grid-column-start: 2;
   grid-column-end: 4;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.text_section {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
 }
 
 .content_title {
@@ -224,7 +254,26 @@ a:focus-visible {
   text-align: left;
   grid-column-start: 2;
   grid-column-end: 4;
-  margin-bottom: 20px;
+  /* margin-bottom: 20px; */
+}
+
+.paragraph_scope {
+  background-color: var(--accent-color);
+  color: var(--accent-text-color);
+  font-family: 'IBM Plex Mono';
+  font-size: 18px;
+  font-weight: 700;
+  line-height: 23.4px;
+  text-align: left;
+  grid-column-start: 1;
+  grid-column-end: 4;
+  margin-bottom: 2px;
+}
+
+.text_section_set {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
 }
 
 .text_title {
@@ -235,7 +284,7 @@ a:focus-visible {
   font-weight: 400;
   line-height: 23.4px;
   text-align: left;
-  margin-bottom: 10px;
+  /* margin-bottom: 10px; */
 }
 
 .text {
@@ -247,7 +296,7 @@ a:focus-visible {
   text-align: left;
   grid-column-start: 2;
   grid-column-end: 4;
-  margin-bottom: 20px;
+  /* margin-bottom: 20px; */
 }
 
 .pictures {
@@ -259,6 +308,7 @@ a:focus-visible {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   gap: 20px;
+  margin-top: 20px;
 }
 
 .gorizontal_pic {
@@ -334,8 +384,7 @@ a:focus-visible {
   height: 25px;
   border-left: 1px solid var(--accent-color);
   border-bottom: 1px solid var(--accent-color);
-  margin-top: 720px;
-  margin-right: 20px;
+  margin-top: 725px;
   position: absolute;
   left: 20px;
 }
