@@ -9,9 +9,9 @@
   /* сохраните в разметке и стилях класс page. На его основе работает скрипт. */
   background-image: var(--cover-image);
   background-color: var(--bg-color);
-  background-position: center;
-  width: 100%;
   background-attachment: fixed;
+  background-size: cover;
+  background-position: right;
 }
 
 a {
@@ -27,14 +27,11 @@ a:focus-visible {
 }
 
 .header {
-  background-image: var(--cover-image);
-  background-position: bottom;
   display: grid;
   align-items: start;
   grid-template-columns: repeat(4, 1fr);
   grid-template-rows: repeat(3, 1fr);
   position: relative;
-  height: 100vh;
 }
 
 .rec::before {
