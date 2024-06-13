@@ -1,9 +1,9 @@
 /* Основные стили проекта. Это стили для темы, которую вы верстаете первой. */
 @import url(globals.css);
-@import url(../fonts/fonts.css);
 @import url(variables.css);
 @import url(dark.css);
 @import url(light.css);
+@import url(../fonts/fonts.css);
 
 .page {
   /* сохраните в разметке и стилях класс page. На его основе работает скрипт. */
