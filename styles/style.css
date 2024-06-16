@@ -13,8 +13,14 @@
   text-shadow: 2px 2px 0px var(--accent-color);
 }
 
+.shadow_link:focus {
+  text-decoration: none;
+}
+
 .shadow_link:hover {
   text-decoration: underline var(--accent-color);
+  text-decoration: none;
+  border-bottom: 1px solid var(--accent-color);
 }
 
 .shadow_link:focus-visible {
@@ -114,6 +120,10 @@
 .header__theme-menu-button_active {
   border: 1px solid var(--accent-color);
   pointer-events: none;
+}
+
+.header__theme-menu-button:focus {
+  outline: none;
 }
 
 .header__theme-menu-button:hover {
@@ -526,7 +536,7 @@
   .text_title {
     margin-bottom: 10px;
   }
-  
+
   .how {
     display: flex;
     flex-direction: column;
