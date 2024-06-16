@@ -126,7 +126,7 @@
 .decoration {
   color: var(--title-color);
   font-family: 'IBM Plex Mono', sans-serif;
-  font-size: 157px;
+  font-size: clamp(7.5rem, 0.5625rem + 14.4531vw, 9.8125rem);
   font-weight: 700;
   line-height: 129.53px;
   text-align: left;
@@ -387,7 +387,7 @@
 
 @media (min-width: 668px) and (max-width: 768px) {
   .decoration {
-    font-size: 120px;
+    font-size: clamp(7.5rem, 0.5625rem + 14.4531vw, 9.8125rem);
     line-height: 99px;
     margin-bottom: 162px;
     margin-top: 170px;
@@ -424,7 +424,7 @@
 
 @media (min-width: 375px) and (max-width: 668px) {
   .decoration {
-    font-size: 116px;
+    font-size: clamp(7.25rem, 7.0115rem + 1.0178vw, 7.5rem);
     line-height: 95.7px;
     margin-bottom: 55px;
     margin-left: 10px;
