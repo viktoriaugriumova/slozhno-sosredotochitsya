@@ -165,18 +165,24 @@
   align-items: start;
   grid-template-columns: repeat(3, 1fr);
   column-gap: 20px;
-  margin-bottom: 76px;
+  margin-bottom: 80px;
+}
+
+.article {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
 }
 
 .paragraph_block {
   display: grid;
   grid-column-start: 2;
   grid-column-end: 4;
-  row-gap: 15px;
+  row-gap: 18px;
 }
 
 .what {
-  margin-bottom: 78px;
+  margin-bottom: 80px;
 }
 
 .text_block {
@@ -464,6 +470,10 @@
     margin-top: 42px;
   }
 
+  .article {
+    gap: 0px;
+  }
+
   .why {
     display: flex;
     flex-direction: column;
@@ -513,6 +523,10 @@
     gap: 2px;
   }
 
+  .text_title {
+    margin-bottom: 10px;
+  }
+  
   .how {
     display: flex;
     flex-direction: column;
