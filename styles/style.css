@@ -65,9 +65,9 @@
   height: 25px;
   border-top: 1px solid var(--accent-color);
   border-right: 1px solid var(--accent-color);
-  margin-top: 20px;
   position: absolute;
-  left: 979px;
+  right: 20px;
+  top: 20px;
 }
 
 .decorated-zone::after {
@@ -79,7 +79,7 @@
   margin-top: 20px;
   margin-right: 20px;
   position: absolute;
-  top: 701px;
+  bottom: 20px;
   left: 20px;
 }
 
@@ -355,37 +355,13 @@
 .footer {
   display: flex;
   justify-content: center;
-  align-items: center;
   block-size: 100vh;
   min-block-size: 668px;
-}
-
-.footer::before {
-  content: "";
-  width: 25px;
-  height: 25px;
-  border-top: 1px solid var(--accent-color);
-  border-right: 1px solid var(--accent-color);
-  margin-top: 20px;
-  margin-right: 20px;
-  position: absolute;
-  left: 979px;
-}
-
-.footer::after {
-  content: "";
-  width: 25px;
-  height: 25px;
-  border-left: 1px solid var(--accent-color);
-  border-bottom: 1px solid var(--accent-color);
-  margin-top: 725px;
-  position: absolute;
-  left: 20px;
-  top: 723px;
+  position: relative;
 }
 
 .footer_decoration {
-  margin-top: 0px;
+  margin-top: 320px;
 }
 
 @media (min-width: 668px) and (max-width: 768px) {
