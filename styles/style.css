@@ -1,9 +1,4 @@
 /* Основные стили проекта. Это стили для темы, которую вы верстаете первой. */
-@import url(globals.css);
-@import url(variables.css);
-@import url(dark.css);
-@import url(light.css);
-@import url(../fonts/fonts.css);
 
 .page {
   /* сохраните в разметке и стилях класс page. На его основе работает скрипт. */
@@ -14,15 +9,15 @@
   background-position: right;
 }
 
-a {
-  text-shadow: 4px 4px 0px var(--accent-color);
+.shadow_link {
+  text-shadow: 2px 2px 0px var(--accent-color);
 }
 
-a:hover {
+.shadow_link:hover {
   text-decoration: underline var(--accent-color);
 }
 
-a:focus-visible {
+.shadow_link:focus-visible {
   border: 1px solid var(--text-color);
 }
 
@@ -32,13 +27,15 @@ a:focus-visible {
   grid-template-columns: repeat(4, 1fr);
   grid-template-rows: repeat(3, 1fr);
   position: relative;
-  height: 100vh;
+  block-size: 100vh;
+  min-block-size: 668px;
 }
 
 .rec::before {
-  content: "REC";
+  content: "rec";
+  text-transform: uppercase;
   color: var(--accent-color);
-  font-family: IBM Plex Mono;
+  font-family: 'IBM Plex Mono', sans-serif;
   font-size: 18px;
   font-weight: 400;
   line-height: 25px;
@@ -52,7 +49,7 @@ a:focus-visible {
 
 .rec::after {
   content: "";
-  box-shadow: 0px 0px 4px 2px #FF0070;
+  box-shadow: 0px 0px 4px 2px var(--accent-color);
   background-color: var(--accent-color);
   width: 9px;
   height: 9px;
@@ -69,7 +66,6 @@ a:focus-visible {
   border-top: 1px solid var(--accent-color);
   border-right: 1px solid var(--accent-color);
   margin-top: 20px;
-  margin-right: 20px;
   position: absolute;
   left: 979px;
 }
@@ -100,7 +96,7 @@ a:focus-visible {
 
 .header__theme-menu-button {
   color: var(--accent-color);
-  font-family: 'IBM Plex Mono';
+  font-family: 'IBM Plex Mono', sans-serif;
   font-size: 18px;
   font-weight: 400;
   line-height: 18px;
@@ -119,7 +115,7 @@ a:focus-visible {
 }
 
 .header__theme-menu-button:hover {
-  border: 1px solid #FF007066;
+  border: 1px solid var(--accent-color);
 }
 
 .header__theme-menu-button:focus-visible {
@@ -129,7 +125,7 @@ a:focus-visible {
 
 .decoration {
   color: var(--title-color);
-  font-family: 'IBM Plex Mono';
+  font-family: 'IBM Plex Mono', sans-serif;
   font-size: 157px;
   font-weight: 700;
   line-height: 129.53px;
@@ -138,13 +134,13 @@ a:focus-visible {
   grid-column-end: 4;
   grid-row-start: 2;
   margin-top: 66px;
-  text-shadow: 4px 4px 0px #FF0070;
+  text-shadow: 4px 4px 0px var(--accent-color);
 }
 
 .header_title {
   background-color: var(--accent-color);
   color: var(--accent-text-color);
-  font-family: 'IBM Plex Mono';
+  font-family: 'IBM Plex Mono', sans-serif;
   font-size: 18px;
   font-weight: 700;
   line-height: 23.4px;
@@ -197,7 +193,7 @@ a:focus-visible {
 
 .section_title {
   color: var(--accent-color);
-  font-family: 'IBM Plex Mono';
+  font-family: 'IBM Plex Mono', sans-serif;
   font-size: 18px;
   font-weight: 700;
   line-height: 23.4px;
@@ -233,7 +229,7 @@ a:focus-visible {
 .content_title {
   background-color: var(--accent-color);
   color: var(--accent-text-color);
-  font-family: 'IBM Plex Mono';
+  font-family: 'IBM Plex Mono', sans-serif;
   font-size: 18px;
   font-weight: 700;
   line-height: 23.4px;
@@ -243,7 +239,7 @@ a:focus-visible {
 .paragraph_title {
   background-color: var(--accent-color);
   color: var(--accent-text-color);
-  font-family: 'IBM Plex Mono';
+  font-family: 'IBM Plex Mono', sans-serif;
   font-size: 18px;
   font-weight: 700;
   line-height: 23.4px;
@@ -255,7 +251,7 @@ a:focus-visible {
 .paragraph_scope {
   background-color: var(--accent-color);
   color: var(--accent-text-color);
-  font-family: 'IBM Plex Mono';
+  font-family: 'IBM Plex Mono', sans-serif;
   font-size: 18px;
   font-weight: 700;
   line-height: 23.4px;
@@ -274,7 +270,7 @@ a:focus-visible {
 .text_title {
   background-color: var(--accent-color);
   color: var(--accent-text-color);
-  font-family: 'IBM Plex Mono';
+  font-family: 'IBM Plex Mono', sans-serif;
   font-size: 18px;
   font-weight: 400;
   line-height: 23.4px;
@@ -283,7 +279,7 @@ a:focus-visible {
 
 .text {
   color: var(--text-color);
-  font-family: 'IBM Plex Mono';
+  font-family: 'IBM Plex Mono', sans-serif;
   font-size: 18px;
   font-weight: 400;
   line-height: 23.4px;
@@ -357,6 +353,8 @@ a:focus-visible {
 .footer {
   display: grid;
   justify-items: center;
+  block-size: 100vh;
+  min-block-size: 668px;
 }
 
 .footer::before {
