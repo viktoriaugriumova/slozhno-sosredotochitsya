@@ -13,10 +13,6 @@
   text-shadow: 2px 2px 0px var(--accent-color);
 }
 
-.shadow_link:focus {
-  text-decoration: none;
-}
-
 .shadow_link:hover {
   text-decoration: underline var(--accent-color);
   text-decoration: none;
