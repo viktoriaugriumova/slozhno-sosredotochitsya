@@ -19,7 +19,7 @@
 
 .shadow_link:hover {
   text-decoration: none;
-  border-bottom: 1px solid var(--accent-color);
+  border-bottom: 1px solid var(--text-color);
 }
 
 .shadow_link:focus-visible {
@@ -68,8 +68,8 @@
   content: "";
   width: 25px;
   height: 25px;
-  border-top: 1px solid var(--accent-color);
-  border-right: 1px solid var(--accent-color);
+  border-top: 1px solid var(--decoration-color);
+  border-right: 1px solid var(--decoration-color);
   position: absolute;
   right: 20px;
   top: 20px;
@@ -79,10 +79,8 @@
   content: "";
   width: 25px;
   height: 25px;
-  border-left: 1px solid var(--accent-color);
-  border-bottom: 1px solid var(--accent-color);
-  margin-top: 20px;
-  margin-right: 20px;
+  border-left: 1px solid var(--decoration-color);
+  border-bottom: 1px solid var(--decoration-color);
   position: absolute;
   bottom: 20px;
   left: 20px;
@@ -100,7 +98,7 @@
 }
 
 .header__theme-menu-button {
-  color: var(--accent-color);
+  color: var(--button-text-color);
   font-family: 'IBM Plex Mono', sans-serif;
   font-size: 18px;
   font-weight: 400;
@@ -117,7 +115,7 @@
 }
 
 .header__theme-menu-button_active {
-  border: 1px solid var(--accent-color);
+  border: 1px solid var(--active-button-color);
   pointer-events: none;
 }
 
@@ -126,12 +124,11 @@
 }
 
 .header__theme-menu-button:hover {
-  border: 1px solid var(--accent-color);
+  border: 1px solid var(--border-color);
 }
 
 .header__theme-menu-button:focus-visible {
-  text-decoration: underline var(--accent-color);
-
+  border-bottom: 1px solid var(--button-text-color);
 }
 
 .decoration {
@@ -144,8 +141,8 @@
   grid-column-start: 1;
   grid-column-end: 4;
   grid-row-start: 2;
-  margin-top: 66px;
   text-shadow: 4px 4px 0px var(--accent-color);
+  margin-top: 66px;
 }
 
 .header_title {
@@ -209,7 +206,7 @@
 }
 
 .section_title {
-  color: var(--accent-color);
+  color: var(--section-title-color);
   font-family: 'IBM Plex Mono', sans-serif;
   font-size: 18px;
   font-weight: 700;
@@ -403,11 +400,6 @@
     flex-direction: column;
     align-items: flex-end;
     gap: 15px;
-  }
-
-  .section_title {
-    width: 236px;
-    height: 70px;
   }
 
   .section_body {
