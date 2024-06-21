@@ -28,7 +28,7 @@
 
 .header {
   display: grid;
-  align-items: start;
+  align-items: center;
   grid-template-columns: repeat(4, 1fr);
   grid-template-rows: repeat(3, 1fr);
   position: relative;
@@ -89,6 +89,7 @@
 .header__theme-menu {
   grid-column-start: 2;
   grid-column-end: 4;
+  margin-bottom: 210px;
 }
 
 .header__theme-menu-list {
@@ -142,7 +143,6 @@
   grid-column-end: 4;
   grid-row-start: 2;
   text-shadow: 4px 4px 0px var(--accent-color);
-  margin-top: 66px;
 }
 
 .header_title {
@@ -157,7 +157,7 @@
   grid-column-end: 5;
   grid-row-start: 3;
   margin-right: 20px;
-  margin-top: 52px;
+  margin-bottom: 82px;
 }
 
 .content {
