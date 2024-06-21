@@ -11,6 +11,7 @@
   */
   --cover-image: url(../images/cover-image-dark.png);
   --accent-color: #ff0070;
+  --rec-color: #ff0070;
   --border-color: rgb(255 0 112 / 0.4);
   --title-color: #db00ff;
   --section-title-color: #ff0070;
@@ -26,6 +27,7 @@
   .page {
     --cover-image: url(../images/cover-image-dark.png);
     --accent-color: #ff0070;
+    --rec-color: #ff0070;
     --border-color: rgb(255 0 112 / 0.4);
     --title-color: #db00ff;
     --section-title-color: #ff0070;

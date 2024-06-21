@@ -8,6 +8,7 @@
 .page.theme_light {
   --cover-image: url(../images/cover-image-light.png);
   --accent-color: #ff8dcb;
+  --rec-color: transparent;
   --border-color: rgb(50 49 45 / 0.4);
   --title-color: #ffc2e6;
   --section-title-color: #353430;

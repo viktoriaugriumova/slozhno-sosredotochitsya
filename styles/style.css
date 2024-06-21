@@ -39,7 +39,7 @@
 .rec::before {
   content: "rec";
   text-transform: uppercase;
-  color: var(--accent-color);
+  color: var(--rec-color);
   font-family: 'IBM Plex Mono', sans-serif;
   font-size: 18px;
   font-weight: 400;
@@ -54,8 +54,8 @@
 
 .rec::after {
   content: "";
-  box-shadow: 0px 0px 4px 2px var(--accent-color);
-  background-color: var(--accent-color);
+  box-shadow: 0px 0px 4px 2px var(--rec-color);
+  background-color: var(--rec-color);
   width: 9px;
   height: 9px;
   top: 28px;
