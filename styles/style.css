@@ -377,8 +377,6 @@
   .decoration {
     font-size: clamp(7.5rem, 0.5625rem + 14.4531vw, 9.8125rem);
     line-height: 99px;
-    /* margin-bottom: 162px;
-    margin-top: 170px; */
     text-wrap: nowrap;
   }
 
@@ -409,19 +407,13 @@
     grid-template-columns: repeat(1, 1fr);
     gap: 20px;
   }
-
-  /* .footer {
-    align-items: center;
-  } */
 }
 
 @media (min-width: 375px) and (max-width: 668px) {
   .decoration {
     font-size: clamp(7.25rem, 7.0115rem + 1.0178vw, 7.5rem);
     line-height: 95.7px;
-    /* margin-bottom: 55px; */
     margin-left: 10px;
-    /* margin-top: 52px; */
   }
 
   .header__theme-menu {
