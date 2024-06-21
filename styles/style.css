@@ -367,13 +367,14 @@
 .footer {
   display: flex;
   justify-content: center;
+  align-items: center;
   block-size: 100vh;
   min-block-size: 668px;
   position: relative;
 }
 
 .footer_decoration {
-  margin-top: 320px;
+  /* margin-top: 320px; */
 }
 
 @media (min-width: 668px) and (max-width: 768px) {
@@ -422,14 +423,14 @@
   .decoration {
     font-size: clamp(7.25rem, 7.0115rem + 1.0178vw, 7.5rem);
     line-height: 95.7px;
-    margin-bottom: 55px;
+    /* margin-bottom: 55px; */
     margin-left: 10px;
-    margin-top: 52px;
+    /* margin-top: 52px; */
   }
 
   .header__theme-menu {
     grid-column-start: 4;
-    margin-top: 55px;
+    /* margin-top: 55px; */
     margin-right: 5px;
   }
 
@@ -446,7 +447,7 @@
     grid-row-start: 3;
     margin-right: 10px;
     margin-left: 10px;
-    margin-top: 0px;
+    /* margin-top: 0px; */
   }
 
   .decorated-zone::before {
