@@ -426,8 +426,9 @@
 
   .header__theme-menu {
     grid-column-start: 4;
-    /* margin-top: 55px; */
+    margin-top: 0px;
     margin-right: 5px;
+    margin-bottom: 0px;
   }
 
   .header__theme-menu-list {
@@ -443,7 +444,7 @@
     grid-row-start: 3;
     margin-right: 10px;
     margin-left: 10px;
-    /* margin-top: 0px; */
+    margin-bottom: 23px;
   }
 
   .decorated-zone::before {
@@ -452,7 +453,7 @@
   }
 
   .decorated-zone::after {
-    top: 613px;
+    top: 633px;
     left: 10px;
   }
 
@@ -545,9 +546,7 @@
     margin-top: 5px;
   }
 
-  .footer_decoration {
-    margin-top: 270px;
-    margin-bottom: 285px;
-    margin-right: 8px;
+  .footer {
+    margin-top: -20px;
   }
 }
