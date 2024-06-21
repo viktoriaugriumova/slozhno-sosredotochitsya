@@ -386,13 +386,14 @@
   }
 
   .header_title {
-    margin-top: 0px;
+    margin-bottom: 200px;
   }
 
   .header__theme-menu {
     grid-column-start: 4;
     margin-top: 162px;
     margin-right: 15px;
+    margin-bottom: 0px;
   }
   
   .header__theme-menu-list {
