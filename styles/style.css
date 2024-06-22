@@ -445,8 +445,8 @@
   }
 
   .decorated-zone::after {
-    top: 633px;
     left: 10px;
+    bottom: 10px;
   }
 
   .rec::before {
